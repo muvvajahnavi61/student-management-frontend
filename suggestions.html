@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Career Suggestions</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#4facfe,#00f2fe);
+    margin:0;
+    padding:20px;
+}
+
+.container{
+    max-width:800px;
+    margin:auto;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+
+h1{
+    text-align:center;
+    color:#0077cc;
+}
+
+h2{
+    color:#333;
+}
+
+ul{
+    line-height:1.8;
+}
+
+button{
+    background:#0077cc;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#005fa3;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>🎓 Career Suggestions</h1>
+
+<div id="result"></div>
+
+<br>
+
+<button onclick="window.location.href='index.html'">
+⬅ Back to Home
+</button>
+
+</div>
+
+<script>
+
+let course = localStorage.getItem("course");
+
+let result = document.getElementById("result");
+
+if(course === "Java Full Stack"){
+
+result.innerHTML = `
+<h2>📚 Java Full Stack</h2>
+
+<p><b>Course Use:</b> Web Applications, Enterprise Applications Development</p>
+
+<h3>🏆 Certifications</h3>
+<ul>
+<li>Oracle Java Certification</li>
+<li>Spring Boot Certification</li>
+</ul>
+
+<h3>💼 Career Opportunities</h3>
+<ul>
+<li>Software Developer</li>
+<li>Java Developer</li>
+<li>Backend Developer</li>
+<li>Full Stack Developer</li>
+</ul>
+`;
+
+}
+
+else if(course === "Data Science"){
+
+result.innerHTML = `
+<h2>📊 Data Science</h2>
+
+<p><b>Course Use:</b> Data Analysis, AI & Machine Learning</p>
+
+<h3>🏆 Certifications</h3>
+<ul>
+<li>IBM Data Science</li>
+<li>Google Data Analytics</li>
+</ul>
+
+<h3>💼 Career Opportunities</h3>
+<ul>
+<li>Data Analyst</li>
+<li>Data Scientist</li>
+<li>Machine Learning Engineer</li>
+</ul>
+`;
+
+}
+
+else if(course === "AWS"){
+
+result.innerHTML = `
+<h2>☁ AWS Cloud</h2>
+
+<p><b>Course Use:</b> Cloud Computing & Infrastructure Management</p>
+
+<h3>🏆 Certifications</h3>
+<ul>
+<li>AWS Cloud Practitioner</li>
+<li>AWS Solutions Architect</li>
+</ul>
+
+<h3>💼 Career Opportunities</h3>
+<ul>
+<li>Cloud Engineer</li>
+<li>DevOps Engineer</li>
+<li>Cloud Architect</li>
+</ul>
+`;
+
+}
+
+else{
+
+result.innerHTML = `
+<h2>Course Information Not Available</h2>
+<p>Please enter:</p>
+
+<ul>
+<li>Java Full Stack</li>
+<li>Data Science</li>
+<li>AWS</li>
+</ul>
+`;
+
+}
+
+</script>
+
+</body>
+</html>

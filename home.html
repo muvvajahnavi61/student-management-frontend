@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎓 Student Career Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🎓 Student Career Management System</h1>
+
+    <p class="subtitle">
+        Manage Student Details, Courses, Certifications and Career Goals
+    </p>
+
+    <form id="studentForm">
+
+        <input type="text" id="name" placeholder="👤 Enter Student Name" required>
+
+        <input type="email" id="email" placeholder="📧 Enter Email" required>
+
+        <input type="text" id="course" placeholder="📚 Enter Course" required>
+
+        <input type="text" id="certification" placeholder="🏆 Enter Certification" required>
+
+        <input type="text" id="futureUse" placeholder="🚀 Future Career Goal" required>
+
+        <button type="submit">➕ Add Student</button>
+
+    </form>
+
+    <h2>📋 Student Records</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Course</th>
+                <th>Certification</th>
+                <th>Future Goal</th>
+            </tr>
+        </thead>
+
+        <tbody id="studentTableBody"></tbody>
+
+    </table>
+
+    <br><br>
+
+    <button onclick="openSuggestions()">
+        🎯 View Career Suggestions
+    </button>
+
+    <button onclick="window.location.href='about.html'">
+        ℹ️ About Project
+    </button>
+
+    <button onclick="window.location.href='contact.html'">
+        📞 Contact
+    </button>
+    <br><br>
+
+<button onclick="window.location.href='course-details.html'">
+📚 Course Details
+</button>
+
+<button onclick="window.location.href='career.html'">
+💼 Career Opportunities
+</button>
+
+<button onclick="window.location.href='certifications.html'">
+🏆 Certifications
+</button>
+
+    <div class="footer">
+        <p>
+            Developed By: Jahnavi |
+            Student Career Management System
+        </p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
